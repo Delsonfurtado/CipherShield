@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============================================================ -->
+    <!-- Primary Meta                                                  -->
+    <!-- ============================================================ -->
+    <title>CipherShield — Zero-Knowledge Password Manager</title>
+    <meta
+      name="description"
+      content="CipherShield is a zero-knowledge password manager. Your secrets are encrypted on-device before they ever reach our servers."
+    />
+    <meta name="author" content="CipherShield" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- ============================================================ -->
+    <!-- Theme & Brand                                                  -->
+    <!-- ============================================================ -->
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- ============================================================ -->
+    <!-- Favicons                                                       -->
+    <!-- ============================================================ -->
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+
+    <!-- ============================================================ -->
+    <!-- PWA / Web App Manifest                                        -->
+    <!-- ============================================================ -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CipherShield" />
+    <meta name="application-name" content="CipherShield" />
+
+    <!-- ============================================================ -->
+    <!-- Open Graph                                                     -->
+    <!-- ============================================================ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CipherShield — Zero-Knowledge Password Manager" />
+    <meta
+      property="og:description"
+      content="End-to-end encrypted password manager. Your master key never leaves your device."
+    />
+    <meta property="og:image" content="/og-image.png" />
+
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- ============================================================ -->
+    <!-- Fonts (Inter + JetBrains Mono)                               -->
+    <!-- ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-surface-900 text-slate-50 antialiased">
+    <!-- App root -->
+    <div id="root"></div>
+
+    <!-- Noscript fallback -->
+    <noscript>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background: #0f172a;
+          color: #f1f5f9;
+          font-family: system-ui, sans-serif;
+          text-align: center;
+          padding: 2rem;
+        "
+      >
+        <div>
+          <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem">CipherShield requires JavaScript</h1>
+          <p style="color: #94a3b8">
+            All cryptographic operations run locally in your browser. Please enable JavaScript to continue.
+          </p>
+        </div>
+      </div>
+    </noscript>
+
+    <!-- argon2-browser's UMD bundle embeds its Wasm binary and exposes window.argon2. -->
+    <script src="/argon2-bundled.min.js"></script>
+
+    <!-- Vite entry point -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

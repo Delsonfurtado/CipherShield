@@ -1,0 +1,96 @@
+# ============================================================
+# CipherShield — Docker Compose (Development)
+# ============================================================
+# Usage:
+#   cp .env.example .env   # fill in your secrets
+#   docker-compose up --build
+# ============================================================
+
+version: "3.9"
+
+networks:
+  ciphershield:
+    driver: bridge
+
+volumes:
+  node_modules_cache:
+
+services:
+  # ----------------------------------------------------------
+  # Frontend — Vite dev server (hot-reload)
+  # ----------------------------------------------------------
+  frontend:
+    image: node:20-alpine
+    container_name: cs_frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - node_modules_cache:/app/node_modules
+    env_file:
+      - .env
+    ports:
+      - "5173:5173"
+    command: sh -c "npm ci --prefer-offline && npm run dev -- --host 0.0.0.0"
+    networks:
+      - ciphershield
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:5173"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: unless-stopped
+
+  # ----------------------------------------------------------
+  # Backend — FastAPI + Uvicorn (hot-reload via --reload)
+  # ----------------------------------------------------------
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    container_name: cs_backend
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    networks:
+      - ciphershield
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  # ----------------------------------------------------------
+  # Nginx — Reverse proxy (optional, comment out if not needed)
+  # ----------------------------------------------------------
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: cs_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - ciphershield
+    depends_on:
+      frontend:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    profiles:
+      - proxy   # only starts with: docker-compose --profile proxy up

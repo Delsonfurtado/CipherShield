@@ -1,0 +1,176 @@
+# ============================================================
+# CipherShield — .gitignore
+# ============================================================
+
+# ----------------------------------------------------------
+# Environment & secrets — NEVER commit these
+# ----------------------------------------------------------
+.env
+.env.local
+.env.*.local
+.env.production
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# ----------------------------------------------------------
+# Node.js / Frontend
+# ----------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Vite
+*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+blob-report/
+
+# Cache
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+
+# ----------------------------------------------------------
+# Python / Backend
+# ----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.Python
+pip-wheel-metadata/
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+sdist/
+
+# Pytest
+.pytest_cache/
+.pytest_tmp/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# mypy / ruff / pyright
+.mypy_cache/
+.ruff_cache/
+.pyright/
+pyrightconfig.json
+
+# ----------------------------------------------------------
+# Docker
+# ----------------------------------------------------------
+docker-compose.override.yml
+
+# ----------------------------------------------------------
+# IDEs & Editors
+# ----------------------------------------------------------
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+Session.vim
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------------------------------------
+# Operating Systems
+# ----------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptedDatabase
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# ----------------------------------------------------------
+# Logs & temp files
+# ----------------------------------------------------------
+logs/
+*.log
+*.log.*
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# ----------------------------------------------------------
+# Miscellaneous
+# ----------------------------------------------------------
+.sass-cache/
+*.css.map
+*.js.map

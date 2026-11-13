@@ -1,0 +1,149 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+7 0 obj
+<< /Length 4263 >>
+stream
+q 1.000 1.000 1.000 rg 0 0 612 792 re f Q
+q 0.080 0.140 0.250 rg 0 0 612 25 re f Q
+BT /F1 8 Tf 0.860 0.890 0.930 rg 1 0 0 1 42 10 Tm (CipherShield  |  Project summary  |  1) Tj ET
+q 0.080 0.140 0.250 rg 40 681 532 83 re f Q
+q 0.230 0.480 0.820 rg 40 681 6 83 re f Q
+BT /F2 25 Tf 1.000 1.000 1.000 rg 1 0 0 1 60 731 Tm (CipherShield) Tj ET
+BT /F1 11 Tf 0.840 0.890 0.960 rg 1 0 0 1 61 709 Tm (Project overview and work completed) Tj ET
+BT /F1 8.5 Tf 0.720 0.790 0.880 rg 1 0 0 1 61 692 Tm (Prepared 13 November 2026) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 655 Tm (What the project does) Tj ET
+q 0.230 0.480 0.820 rg 42 648 38 2 re f Q
+BT /F1 10 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 632 Tm (CipherShield is a password manager designed around client-side encryption. It lets users) Tj ET
+BT /F1 10 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 618 Tm (create and organize vault entries such as logins, secure notes, payment cards, identities,) Tj ET
+BT /F1 10 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 604 Tm (API keys, and Wi-Fi credentials. The server stores encrypted vault data when cloud mode is) Tj ET
+BT /F1 10 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 590 Tm (enabled; it does not receive the decrypted vault contents.) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 572 Tm (Main capabilities) Tj ET
+q 0.230 0.480 0.820 rg 42 565 38 2 re f Q
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 549 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 549 Tm (Derives keys from the master password with Argon2id and encrypts vault entries with) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 536 Tm (AES-256-GCM.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 521 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 521 Tm (Creates and edits vault items, folders, tags, favorites, trash, and item history.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 506 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 506 Tm (Supports password generation, strength and reuse checks, and optional breach checks) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 493 Tm (using the HIBP k-anonymity approach.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 478 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 478 Tm (Includes TOTP two-factor authentication support, recovery codes, and secure share) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 465 Tm (links in cloud mode.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 450 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 450 Tm (Provides search, a command palette, dark and light themes, drag-and-drop organization,) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 437 Tm (and an installable PWA interface.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 422 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 422 Tm (Cloud deployment uses a FastAPI Python backend with Supabase Auth and PostgreSQL; the) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 409 Tm (frontend is React and TypeScript.) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 394 Tm (How vault protection works) Tj ET
+q 0.230 0.480 0.820 rg 42 387 38 2 re f Q
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 371 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 371 Tm (The master password is processed in the browser to derive encryption keys.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 356 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 356 Tm (Each vault item is encrypted in the browser before it is stored or sent to a server.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 341 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 341 Tm (In local-only mode, account data and encrypted items stay in the browser profile using) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 328 Tm (IndexedDB.) Tj ET
+q 0.940 0.960 0.980 rg 42 47 528 41 re f Q
+BT /F2 9 Tf 0.080 0.140 0.250 rg 1 0 0 1 54 70 Tm (Technology:) Tj ET
+BT /F1 9 Tf 0.150 0.190 0.250 rg 1 0 0 1 112 70 Tm (React, TypeScript, Vite, Zustand, FastAPI, Python, Supabase \(optional\)) Tj ET
+BT /F2 9 Tf 0.080 0.140 0.250 rg 1 0 0 1 54 55 Tm (Cryptography:) Tj ET
+BT /F1 9 Tf 0.150 0.190 0.250 rg 1 0 0 1 112 55 Tm (Argon2id, AES-256-GCM, Web Crypto API) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Length 5402 >>
+stream
+q 1.000 1.000 1.000 rg 0 0 612 792 re f Q
+q 0.080 0.140 0.250 rg 0 0 612 25 re f Q
+BT /F1 8 Tf 0.860 0.890 0.930 rg 1 0 0 1 42 10 Tm (CipherShield  |  Project summary  |  2) Tj ET
+BT /F2 22 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 738 Tm (Work completed) Tj ET
+BT /F1 10 Tf 0.360 0.410 0.480 rg 1 0 0 1 42 718 Tm (Local development setup and console fixes) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 690 Tm (Backend startup and local mode) Tj ET
+q 0.230 0.480 0.820 rg 42 683 38 2 re f Q
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 667 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 667 Tm (Fixed the Supabase Python client imports to match the installed supabase-py version.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 652 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 652 Tm (Aligned the auth router with the existing TOTP verification function and corrected) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 639 Tm (FastAPI annotation handling.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 624 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 624 Tm (Added the missing passlib dependency used by password-protected share links.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 609 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 609 Tm (Added a USE_SUPABASE setting. With USE_SUPABASE=false, the backend skips Supabase) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 596 Tm (initialization and cloud background jobs, so local startup needs no Supabase) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 583 Tm (credentials.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 568 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 568 Tm (Configured the local backend environment for development and documented that) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 555 Tm (dependency installation is a one-time setup.) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 540 Tm (Frontend and console fixes) Tj ET
+q 0.230 0.480 0.820 rg 42 533 38 2 re f Q
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 517 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 517 Tm (Local development uses local accounts and does not attempt remote registration or) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 504 Tm (remote login when a local account is missing.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 489 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 489 Tm (Local accounts and encrypted vault entries are stored in browser IndexedDB; local) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 476 Tm (notification UI no longer calls the cloud-only notifications endpoint.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 461 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 461 Tm (Guarded invalid or missing item dates so the vault detail view and cards do not crash) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 448 Tm (while formatting dates.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 433 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 433 Tm (Added a fallback React key for vault cards with missing item IDs.) Tj ET
+BT /F2 9.6 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 418 Tm (-) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 418 Tm (Removed Google-hosted favicons. Vault cards now use local type icons, avoiding CSP) Tj ET
+BT /F1 9.6 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 405 Tm (errors and external site lookups.) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 390 Tm (Running locally) Tj ET
+q 0.230 0.480 0.820 rg 42 383 38 2 re f Q
+q 0.940 0.960 0.980 rg 42 319 528 56 re f Q
+BT /F1 9.5 Tf 0.080 0.140 0.250 rg 1 0 0 1 54 354 Tm (Frontend:  cd frontend    then    npm run dev) Tj ET
+BT /F1 8.6 Tf 0.080 0.140 0.250 rg 1 0 0 1 54 336 Tm (Backend:   cd backend     then    python -m uvicorn app.main:app --reload --port 8000) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 297 Tm (For local-only development, backend/.env uses USE_SUPABASE=false. The frontend defaults to) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 284 Tm (local mode under Vite dev. The backend can be started for local API/health endpoints, but the) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 42 271 Tm (local vault itself is kept in the browser.) Tj ET
+BT /F2 14 Tf 0.080 0.140 0.250 rg 1 0 0 1 42 254 Tm (Notes) Tj ET
+q 0.230 0.480 0.820 rg 42 247 38 2 re f Q
+BT /F2 9.2 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 231 Tm (-) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 231 Tm (Browser-local data belongs to that browser profile on this computer; it does not sync to) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 219 Tm (another device and may be erased if browser site data is cleared.) Tj ET
+BT /F2 9.2 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 205 Tm (-) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 205 Tm (Features that depend on external services or cloud database endpoints are unavailable in) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 193 Tm (local-only mode.) Tj ET
+BT /F2 9.2 Tf 0.230 0.480 0.820 rg 1 0 0 1 47 179 Tm (-) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 179 Tm (Backend import was confirmed in local mode. The frontend build check could not complete in) Tj ET
+BT /F1 9.2 Tf 0.150 0.190 0.250 rg 1 0 0 1 60 167 Tm (this environment because Node.js hit a Windows EPERM permission error.) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000272 00000 n 
+0000000408 00000 n 
+0000000544 00000 n 
+0000004858 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+10311
+%%EOF
